@@ -40,8 +40,7 @@ public class Ejercicio19 {
             } else if (diccionario.containsKey(palabra)) {
                 for (Map.Entry a : diccionario.entrySet()) {
                     if (diccionario.get(palabra).equals(a.getValue())) {
-                        if (palabra.equals(a.getKey())) {
-                        } else {
+                        if (!palabra.equals(a.getKey())) {
                             System.out.println(a.getKey() + " ");
                             tieneSinonimos = true;
                         }
